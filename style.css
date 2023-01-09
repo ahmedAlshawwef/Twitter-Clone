@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1da1f2;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header img {
+    height: 40px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+form input[type="text"] {
+    width: 80%;
+    height: 40px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+form button[type="submit"] {
+    width: 20%;
+    height: 40px;
+    background-color: #1da1f2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#newsfeed {
+    margin: 20px;
+}
+
+.tweet {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.tweet .username {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.tweet .text {
+    margin-bottom: 10px;
+}
+
+.tweet .actions {
+    display: flex;
+    align-items: center;
+}
+
+.tweet .actions button {
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.tweet .actions .like {
+    background-image: url('like.png');
+    background-size: cover;
+}
+
+.tweet .actions .retweet {
+    background-image: url('retweet.png');
+    background-size: cover;
+}
+
+.tweet.liked {
+    background-color: #e6f7ff;}
